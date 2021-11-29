@@ -18,7 +18,7 @@ var cleanCss = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var gulpIf = require('gulp-if');
 var browserSync = require('browser-sync').create();
-
+var gcmq = require('gulp-group-css-media-queries');
 
 
 function scss(cb){
@@ -27,7 +27,8 @@ function scss(cb){
         .pipe( sass() )
         .pipe( concat(config.output.cssName) )
         .pipe( autoprefixer() )
-        .pipe( cleanCss() )
+        .pipe(cleanCss())
+        .pipe(gcmq())
         .pipe( gulpIf(config.isDevelopment, sourcemaps.write() ) )
         .pipe( dest(config.output.path) );
         cb();
