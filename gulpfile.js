@@ -11,7 +11,7 @@ var config = {
 }
 
 const {series, src, dest, watch} = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
