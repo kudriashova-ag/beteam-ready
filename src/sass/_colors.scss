@@ -1,0 +1,17 @@
+.effect-border-dark:after{
+  -webkit-text-stroke:1px #DCDCDE;
+}
+
+.bg-gray{
+  background: var(--gray-color);
+}
+.bg-white{
+  background: #fff;
+}
+.bg-pattern{
+  background-image: url(../images/bg-pattern.png);
+}
+.bg-gradient{
+  background: #2EA57D;
+  background: linear-gradient(to right, #16A085, #63af6b);
+}
