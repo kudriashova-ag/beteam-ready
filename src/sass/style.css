@@ -4667,8 +4667,8 @@ img {
   position: absolute;
   left: 50%;
   top: -10px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 20px var(--secondary-color) solid;
   border-radius: 50%;
 }
@@ -5497,7 +5497,8 @@ img {
 }
 
 .blog .row > * {
-  width: 30%;
+  width: 80vw;
+  margin-right: 10vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -5507,6 +5508,7 @@ img {
   }
   .blog .row > * {
     width: 33.333%;
+    margin-right: 0;
   }
   .blog h2 {
     text-align: left;
