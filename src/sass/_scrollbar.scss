@@ -21,7 +21,25 @@
       overflow: auto;
 }
 .simplebar-track.simplebar-vertical{
-  display: none;
+  // display: none;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  background-color: var(--secondary-color);
+  opacity: 1;
+  height: 7px;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar{
+  z-index: 1;
+}
+.simplebar-track.simplebar-vertical:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 4px;
 }
 .bg-gradient .simplebar-track.simplebar-horizontal:after{
   background-color: #fff;
