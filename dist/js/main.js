@@ -94,7 +94,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
-      
+
       {
         breakpoint: 768,
         settings: "unslick"
@@ -124,7 +124,13 @@ $(document).ready(function () {
     }
   });
 
-  
+
+
+
+  $('aside .widget-title').click(function () {
+    $(this).next('.widget-menu').toggle();
+    $(this).toggleClass('navbar-toggler-close')
+  })
 
 });
 
