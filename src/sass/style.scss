@@ -7,13 +7,28 @@
 * {
   box-sizing: border-box;
 }
+.op {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: 111;
+  pointer-events: none;
+}
+
+html {
+  font-size: 10px;
+}
 
 body {
+  margin: 0;
   background: #f5f5f7;
   color: var(--dark-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 #page {
@@ -21,25 +36,15 @@ body {
 }
 
 section {
-  padding: 3.5em 0;
+  padding: 6rem 0;
   @media screen and (min-width: 768px) {
-    padding: 5.5em 0;
+    padding: 12rem;
   }
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
 }
 
 @media screen and (min-width: 768px) {
@@ -95,7 +100,7 @@ img {
   color: #fff;
   position: relative;
   z-index: 1;
-  padding: 1em 0;
+  padding: 2.5rem 0;
   .container {
     display: flex;
     justify-content: space-between;
@@ -111,14 +116,13 @@ img {
   }
   @media screen and (min-width: 992px) {
     padding: 0;
-
     .header-left,
     .contacts {
       width: max-content;
     }
   }
   .contacts {
-    margin-left: 1em;
+    margin-left: 9rem;
   }
 }
 
@@ -212,7 +216,6 @@ img {
     padding: 1em;
     text-align: center;
     display: block;
-    font-size: 1.5em;
   }
   .menu-item.active,
   .menu-item:hover {
@@ -225,8 +228,7 @@ img {
     position: static;
 
     .menu-item a {
-      font-size: 1.1em;
-      padding: 2rem 16px;
+      padding: 4.5rem 1.6rem;
       display: inline-block;
     }
 
@@ -240,11 +242,10 @@ img {
   }
   @media screen and (min-width: 1200px) {
     .navbar-brand {
-      margin-right: 50px;
+      margin-right: 13rem;
     }
     .menu-item a {
-      font-size: 1.1em;
-      padding: 2rem 28px;
+      padding: 4.5rem 2.5rem;
       display: inline-block;
     }
   }
@@ -286,12 +287,12 @@ img {
 .language-toggler {
   display: flex;
   border: 1px #fff solid;
-  border-radius: 20px;
+  border-radius: 2.3rem;
   .language-toggler-item {
     padding: 9px 14px;
     &.active {
       background: #fff;
-      border-radius: 18px;
+      border-radius: 2rem;
       a {
         color: var(--dark-color);
       }
@@ -299,13 +300,13 @@ img {
   }
   @media screen and (min-width: 1200px) {
     .language-toggler-item {
-      padding: 14px 22px;
+      padding: 1rem 2rem;
     }
   }
 }
 
 .site-content {
-  margin-top: -100px;
+  margin-top: -13.5rem;
 }
 
 .intro-section {
@@ -1731,6 +1732,7 @@ a {
 .contact-form {
   label {
     display: block;
+    font-size: 1.5em;
   }
   .form-group {
     margin-bottom: 2em;
@@ -1739,7 +1741,103 @@ a {
     outline: none;
     width: 100%;
     background: transparent;
-    padding: 1em;
+    padding: 1em 0;
     border-bottom: 1px rgba(0, 0, 0, 0.15) solid;
+    font-weight: 400;
+    font-size: 1.1em;
   }
+  .btn {
+    font-size: 1.1em;
+    margin-top: 3em;
+    width: 100%;
+    padding: 35px 0;
+  }
+}
+
+.contacts-page {
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    @media screen and (min-width: 768px) {
+      font-size: 4em;
+      text-align: center;
+    }
+  }
+  .social-links {
+    display: flex;
+    a + a {
+      margin-left: 1em;
+    }
+  }
+
+  .intro-section {
+    .container:before {
+      content: "";
+      position: absolute;
+      top: 75px;
+      width: 30px;
+      height: 30px;
+      border: 20px var(--primary-color) solid;
+      border-radius: 50%;
+      display: block;
+      left: 75%;
+      z-index: 1;
+    }
+
+    .container:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 50px var(--secondary-color) solid;
+      top: -10px;
+      left: 75%;
+    }
+  }
+
+  .site-content {
+    .container {
+      position: relative;
+      @media screen and (min-width: 768px) {
+        &:before {
+          content: url(../images/element-green-3.svg);
+          position: absolute;
+          top: 30px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.wrap-iframe {
+  padding: 0.5em;
+  background: #fff;
+  border-radius: 30px;
+  margin-top: 3em;
+  position: relative;
+  &:before {
+    content: url(../images/element-red.svg);
+    position: absolute;
+    top: -250px;
+    right: -10px;
+    @media screen and (min-width: 768px) {
+      top: -150px;
+      right: 50%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    margin-top: 0;
+  }
+}
+iframe {
+  border: 0;
+  width: 100%;
+  height: inherit;
+  min-height: 400px;
+  box-shadow: 0 10px 20px #62b9d95e;
+  border-radius: 16px;
 }
