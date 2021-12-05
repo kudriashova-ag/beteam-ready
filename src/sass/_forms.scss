@@ -4,7 +4,7 @@ textarea,
 select,
 label {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   border: none;
 }
@@ -15,7 +15,7 @@ button:hover {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 25px 30px;
+  padding: 3.2rem;
   border-radius: 100px;
 }
 .form-control:active,
@@ -113,7 +113,10 @@ label {
 }
 
 .btn-small {
-  padding: 20px 40px;
+  padding: 3rem 7rem;
+}
+.btn-block {
+  width: 100%;
 }
 
 input[type="search"]::-ms-clear,

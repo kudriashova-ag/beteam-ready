@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.slider-profiles .slider').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: $('.slider-profiles .prev-arrow'),
     nextArrow: $('.slider-profiles .next-arrow'),
@@ -153,4 +153,10 @@ $('.more-link').click(function (e) {
   e.preventDefault();
   $('.more-link').next().removeClass('d-none')
   $('.more-link').hide()
+})
+
+
+
+$('.op+button').click(function () {
+  $('.op').toggle()
 })
