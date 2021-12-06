@@ -115,7 +115,6 @@ img {
   .header-left {
     display: flex;
     align-items: center;
-    width: 100%;
   }
   a {
     color: #fff;
@@ -129,7 +128,10 @@ img {
     }
   }
   .contacts {
-    margin-left: 9rem;
+    margin-left: 2rem;
+    @media screen and (min-width: 1200px) {
+      margin-left: 5rem;
+    }
   }
 }
 
@@ -249,6 +251,11 @@ img {
   }
   @media screen and (min-width: 1200px) {
     .navbar-brand {
+      margin-right: 3rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .navbar-brand {
       margin-right: 13rem;
     }
     .menu-item a {
@@ -345,7 +352,10 @@ img {
   .offer {
     position: relative;
     z-index: 3;
-    padding: 24rem 0;
+    padding: 14rem 0;
+    @media screen and (min-width: 992px) {
+      padding: 24rem 0;
+    }
   }
 
   h1 {
@@ -408,8 +418,8 @@ img {
 .home .container:before {
   width: 30px;
   height: 30px;
-  border: 50px var(--secondary-color) solid;
-  top: 50px;
+  border: 80px var(--secondary-color) solid;
+  top: 126px;
   right: 20px;
   left: auto;
 }
@@ -446,9 +456,9 @@ img {
 .home .intro-section-title {
   text-align: left;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 2rem;
   .effect-border-text {
-    font-size: 14.4rem;
+    font-size: 3em;
     font-weight: 900;
     display: block;
     position: relative;
@@ -468,13 +478,16 @@ img {
     }
   }
   @media screen and (min-width: 768px) {
-    font-size: 2em;
+    font-size: 3rem;
   }
   @media screen and (min-width: 992px) {
-    font-size: 2.5em;
+    font-size: 3rem;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 3.5em;
+    font-size: 4rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 5rem;
   }
 }
 
@@ -517,7 +530,7 @@ img {
     text-align: right;
     height: 107%;
     position: absolute;
-    right: -50px;
+    right: -250px;
     bottom: 0;
     z-index: 2;
     img {
@@ -526,8 +539,11 @@ img {
       max-height: 100%;
     }
   }
-
   @media screen and (min-width: 1400px) {
+    right: -50px;
+  }
+
+  @media screen and (min-width: 1700px) {
     height: 111%;
   }
 }
@@ -597,7 +613,8 @@ img {
   .skill {
     width: 100%;
     max-width: 100%;
-    padding: 35px;
+    min-width: 20rem;
+    padding: 20px;
     position: relative;
     z-index: 1;
     margin: 5px 10px;
@@ -625,6 +642,7 @@ img {
     }
     @media screen and (min-width: 768px) {
       max-width: 20%;
+      padding: 35px;
     }
   }
   .skill-logo {
@@ -918,6 +936,10 @@ img {
     color: #fff;
     line-height: 105%;
     margin-bottom: 9rem;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   .form-floating {
     margin-bottom: 1.5em;
