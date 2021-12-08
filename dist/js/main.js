@@ -57,14 +57,7 @@ $(document).ready(function () {
 
 
 
-  // $('.slider-testimonial .slider').slick({
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: "unslick"
-  //     }
-  //   ]
-  // });
+
 
 
   const optionsSlickScroll = {
@@ -157,6 +150,3 @@ $('.more-link').click(function (e) {
 
 
 
-$('.op+button').click(function () {
-  $('.op').toggle()
-})
