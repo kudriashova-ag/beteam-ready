@@ -63,3 +63,10 @@
 .icon-time-green:before {
   content: url(../images/icons/icon-read-green.svg);
 }
+
+.icon-comment,
+.icon-comment-green,
+.icon-tags,
+.icon-tags-green {
+  transform: translate(0, 1px);
+}
