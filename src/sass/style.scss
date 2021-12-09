@@ -49,6 +49,10 @@ section {
   padding: clamp(6rem, calc(1rem + 5vw), 11rem) 0;
 }
 
+section.feedback {
+  padding: clamp(2rem, calc(1rem + 5vw), 3rem) 0;
+}
+
 .site-content {
   margin-top: -13.5rem;
 }
@@ -540,7 +544,6 @@ section {
 }
 
 .feedback {
-  padding-bottom: 10px;
   position: relative;
 
   h2 {
@@ -730,6 +733,7 @@ section {
   .img {
     background: var(--gray-color);
     border-radius: 1rem;
+    display: inline-flex;
     img {
       margin-top: -30px;
       display: inline-block;

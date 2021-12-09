@@ -1,5 +1,6 @@
 .icon {
   display: inline-block;
+  margin-right: 3px;
 }
 .icon-phone {
   margin-right: 0.3em;
@@ -12,32 +13,53 @@
   border: 1px rgba(22, 22, 22, 0.17) solid;
   border-radius: 50%;
   margin: 0 0.5em;
+  line-height: 2.3em;
 }
-.icon-facebook:after {
-  content: url(../images/facebook.svg);
+.icon-facebook:before {
+  content: url(../images/icons/icon-facebook.svg);
 }
-.icon-instagram:after {
-  content: url(../images/instagram.svg);
+.icon-instagram:before {
+  content: url(../images/icons/icon-instagram.svg);
+  margin-left: 2px;
 }
-.icon-phone:after {
-  content: url(../images/icon-phone.svg);
+.icon-phone:before {
+  content: url(../images/icons/icon-phone.svg);
+}
+
+.icon-user:before {
+  content: url(../images/icons/icon-user.svg);
+}
+.icon-date:before {
+  content: url(../images/icons/icon-calendar.svg);
+}
+.icon-tags:before {
+  content: url(../images/icons/icon-seo.svg);
+}
+.icon-comment:before {
+  content: url(../images/icons/icon-comments.svg);
+}
+.icon-views:before {
+  content: url(../images/icons/icon-views.svg);
+}
+.icon-time:before {
+  content: url(../images/icons/icon-read.svg);
 }
 
 .icon-user-green:before {
-  content: url(../images/icon-user-green.svg);
+  content: url(../images/icons/icon-user-green.svg);
 }
 .icon-date-green:before {
-  content: url(../images/icon-calendar-green.svg);
+  content: url(../images/icons/icon-calendar-green.svg);
 }
 .icon-tags-green:before {
-  content: url(../images/icon-seo-green.svg);
+  content: url(../images/icons/icon-seo-green.svg);
 }
 .icon-comment-green:before {
-  content: url(../images/icon-comments-green.svg);
+  content: url(../images/icons/icon-comments-green.svg);
 }
 .icon-views-green:before {
-  content: url(../images/icon-views-green.svg);
+  content: url(../images/icons/icon-views-green.svg);
 }
 .icon-time-green:before {
-  content: url(../images/icon-read-green.svg);
+  content: url(../images/icons/icon-read-green.svg);
 }
