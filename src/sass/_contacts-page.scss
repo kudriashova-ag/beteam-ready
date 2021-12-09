@@ -1,0 +1,29 @@
+.contacts-page {
+  .intro-section .container:before {
+    top: auto;
+    bottom: -50px;
+  }
+  .intro-section .container:after {
+    top: auto;
+    bottom: -50px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    @media screen and (min-width: 768px) {
+      font-size: 2em;
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 4em;
+      text-align: center;
+    }
+  }
+  .social-links {
+    display: flex;
+    a + a {
+      margin-left: 1em;
+    }
+  }
+}
