@@ -1,0 +1,250 @@
+.site-header {
+  position: relative;
+  padding: 2.5rem 0;
+  z-index: 1;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 1px;
+  color: #fff;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0;
+    .header-left,
+    .contacts {
+      width: max-content;
+    }
+  }
+  .contacts {
+    margin-left: 2rem;
+    @media screen and (min-width: 1200px) {
+      margin-left: 5rem;
+    }
+  }
+}
+
+.open-menu {
+  .site-header {
+    z-index: 100;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #16a085, #63af6b);
+  width: 100%;
+  transition: all 0.2s ease;
+  left: -100%;
+  z-index: 1000;
+
+  &.open-menu {
+    left: 0;
+    .navbar-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 90%;
+      padding: 5vh 0;
+
+      background-image: repeating-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 50%,
+        transparent 100%
+      );
+      background-position: left top;
+      background-repeat: repeat-x;
+      background-size: 20px 1px;
+
+      a {
+        font-size: 3.6rem;
+      }
+    }
+    ul .menu-item.active,
+    ul .menu-item:hover {
+      border: none;
+      a {
+        border-bottom: 1px #fff solid;
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80em;
+      height: 80em;
+      border: 15em var(--primary-color) solid;
+      border-radius: 50%;
+      right: -70em;
+      top: -10em;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 20rem;
+      height: 20rem;
+      border: 3rem var(--secondary-color) solid;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      bottom: -22rem;
+      z-index: 0;
+      pointer-events: none;
+      margin-left: -10rem;
+    }
+    @media screen and (min-width: 992px) {
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    margin: 10px auto;
+    height: 50px;
+    span {
+      transform: rotate(45deg);
+      top: 25px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 25px;
+    }
+    &:before {
+      display: none;
+    }
+  }
+
+  .navbar-brand svg {
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  .menu-item {
+    text-align: center;
+  }
+
+  .menu-item a {
+    padding: 1em;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .menu-item.active,
+  .menu-item:hover {
+    border-bottom: 1px #fff solid;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    position: static;
+
+    .menu-item a {
+      padding: 4.5rem 1.5rem;
+      display: inline-block;
+    }
+
+    .navbar-menu {
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .navbar-menu {
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .navbar-menu {
+      margin-left: 13rem;
+    }
+    .menu-item a {
+      padding: 4.5rem 2.5rem;
+    }
+  }
+}
+
+.navbar-toggler {
+  display: block;
+  width: 50px;
+  height: 35px;
+  margin-left: calc(var(--bs-gutter-x) * 0.5);
+  position: relative;
+  background: none;
+
+  span,
+  &:after,
+  &:before {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+  }
+
+  &:after {
+    bottom: 5px;
+  }
+
+  &:before {
+    top: 5px;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.language-toggler {
+  display: flex;
+  border: 1px #fff solid;
+  border-radius: 2.3rem;
+  .language-toggler-item {
+    padding: 0.9rem 1.4rem;
+    &.active {
+      background: #fff;
+      border-radius: inherit;
+      a {
+        color: var(--dark-color);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .language-toggler-item {
+      padding: 1rem 2rem;
+    }
+  }
+}

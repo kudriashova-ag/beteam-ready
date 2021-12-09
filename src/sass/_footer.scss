@@ -1,0 +1,58 @@
+.site-footer {
+  padding: 7rem 0 4rem 0;
+  text-align: center;
+  background: #fff;
+  .social-icons {
+    margin: 1em 0 2em 0;
+    @media screen and (min-width: 992px) {
+      margin: 2em 0 3em 0;
+    }
+  }
+  .copyright {
+    margin-bottom: 0.5em;
+  }
+  
+  .icon-phone:after {
+    filter: brightness(0);
+  }
+
+  @media screen and (min-width: 992px) {
+    text-align: left;
+    .navbar .menu-item a {
+      padding: 4.5rem clamp(0.5rem, (0.5rem + 1.5vw), 6rem);
+    }
+    .social-icons {
+      margin: 0;
+      text-align: center;
+    }
+    .privacy-policy,
+    .contacts {
+      text-align: right;
+    }
+    .contacts {
+      font-weight: 700;
+    }
+    .copyright {
+      margin-bottom: 0;
+    }
+    .logo {
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .navbar .menu-item a {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .copyright-block {
+    margin-top: 0rem;
+    @media screen and (min-width: 1200px) {
+      margin-top: 7rem;
+    }
+  }
+}

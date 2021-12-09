@@ -59,4 +59,4 @@ function img(cb) {
 }
 
     
-exports.default = series(scss, img, serve)
+exports.default = series(scss, serve)

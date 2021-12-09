@@ -1,17 +1,17 @@
-.effect-border-dark:after{
-  -webkit-text-stroke:1px #DCDCDE;
+.effect-border-dark:after {
+  -webkit-text-stroke: 1px #dcdcde;
 }
 
-.bg-gray{
+.bg-gray {
   background: var(--gray-color);
 }
-.bg-white{
+.bg-white {
   background: #fff;
 }
-.bg-pattern{
-  background-image: url(../images/bg-pattern.png);
+.bg-pattern {
+  background-image: url(../images/bg-pattern.webp);
 }
-.bg-gradient{
-  background: #2EA57D;
-  background: linear-gradient(to right, #16A085, #63af6b);
+.bg-gradient {
+  background: #2ea57d;
+  background: linear-gradient(to right, #16a085, #63af6b);
 }
