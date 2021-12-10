@@ -8,8 +8,8 @@ var config = {
         path: './dist/css'
     },
     images: {
-        from: './dist/images/*.png',
-        to: './dist/img'
+        from: './src/images/*.png',
+        to: './dist/images'
     },
     isDevelopment: true
 }
@@ -54,9 +54,9 @@ function img(cb) {
     return src(config.images.from)
         .pipe(webp())
         .pipe(dest(config.images.to))
-        cb()
-    
+    cb()
+
 }
 
-    
-exports.default = series(scss, serve)
+
+exports.default = series(scss, img, serve)
