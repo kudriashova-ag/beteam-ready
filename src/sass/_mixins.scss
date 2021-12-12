@@ -1,0 +1,23 @@
+@mixin dashed-line($position: bottom) {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-position: left $position;
+  background-repeat: repeat-x;
+  background-size: 20px 1px;
+}
+
+@mixin elements-content($path, $top: "auto", $left: "auto", $bottom: "auto", $right: "auto", $zIndex: 0) {
+  content: url(#{$path}+'.svg');
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  z-index: $zIndex;
+}

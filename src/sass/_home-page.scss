@@ -76,10 +76,260 @@
       @media screen and (min-width: 1200px) {
         right: -150px;
       }
-      @media screen and (min-width: 1700px) {
+      @media screen and (min-width: 1500px) {
         right: 0;
         height: 110%;
       }
+    }
+  }
+}
+
+/* -- skills-section -- */
+@media screen and (min-width: 992px) {
+  .skills-section {
+    background: url(../images/elements/red-cirrcle_right_part.svg) no-repeat 100% 80px;
+    .row:nth-child(2) .skill:nth-child(1):before {
+      @include elements-content("../images/elements/cross-yellow", -30px, -30px);
+      transform: scale(0.8);
+    }
+    .row:nth-child(4) .skill:nth-child(4):before {
+      @include elements-content("../images/elements/cross-red", -30px, auto, auto, -30px);
+      transform: scale(0.8);
+    }
+  }
+}
+
+.skill {
+  width: 100%;
+  min-width: max-content;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  margin: 5px 10px;
+  min-height: 76px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 47px 0px 45px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 94%;
+    height: 93%;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    z-index: -1;
+    border-radius: 40px 0px;
+    background: #fff;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.09);
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 19%;
+    min-width: auto;
+    min-height: 100px;
+    margin: 5px 0.5%;
+  }
+}
+.skill-logo {
+  min-width: 70px;
+}
+
+/* Services */
+@media screen and (min-width: 768px) {
+  .services-section {
+    background-image: url(../images/elements/green-circle-half.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50px;
+  }
+}
+
+.service {
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 25%;
+    .h3 {
+      max-width: 90%;
+      margin: 3rem auto;
+    }
+    &:nth-child(2n) .wrap img {
+      border-radius: 39.5px 143px 39.5px 0px;
+    }
+    &:nth-child(2n + 1) .wrap img {
+      border-radius: 0px 0px 0px 143px;
+    }
+    &:nth-child(2n + 5) .wrap img {
+      border-radius: 39.5px 143px 39.5px 0px;
+    }
+    &:nth-child(2n + 6) .wrap img {
+      border-radius: 0px 0px 0px 143px;
+    }
+    &:nth-child(2n) .wrap:after {
+      border-radius: 47px 144px 45px 0px;
+    }
+    &:nth-child(2n + 5) .wrap:after {
+      border-radius: 47px 144px 45px 0;
+    }
+    &:nth-child(2n + 6) .wrap:after {
+      border-radius: 47px 0 45px 146px;
+    }
+  }
+
+  .wrap {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 1.5em;
+    img {
+      border-radius: 20px;
+      display: block;
+      filter: brightness(0.7);
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      @media screen and (min-width: 992px) {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #faeaea;
+      border-radius: 20px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      margin: -10px 0 0 -10px;
+      padding: 10px;
+      @media screen and (min-width: 992px) {
+        border-radius: 47px 0px 45px 146px;
+      }
+    }
+  }
+  &:hover .stretched-link .btn-small {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  @media screen and (min-width: 768px) {
+    &:after {
+      @include elements-content("../images/elements/cross-yellow", -40px, auto, auto, auto, 2);
+    }
+    &:nth-child(1):after,
+    &:nth-child(3):after {
+      left: 55%;
+    }
+    &:nth-child(2):after {
+      content: url(../images/elements/cross-red.svg);
+      left: 10%;
+    }
+    &:nth-child(4):after {
+      content: url(../images/elements/cross-red.svg);
+      left: 11%;
+    }
+    &:nth-child(5):after {
+      right: 85px;
+      top: -17px;
+    }
+    &:nth-child(6):after {
+      content: url(../images/elements/cross-green.svg);
+      left: 50%;
+    }
+
+    &:nth-child(8):after {
+      content: url(../images/elements/cross-red.svg);
+      left: -5%;
+      top: 5%;
+    }
+  }
+}
+
+/* Going-on */
+
+.going-on-section {
+  h2 {
+    margin-bottom: 9rem;
+  }
+}
+.going {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  & + & {
+    margin-top: 2.5em;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    & + & {
+      margin-top: 0;
+    }
+    .wrap:before {
+      content: "";
+      display: block;
+      width: 100%;
+      border-top: 2px #e9e9e9 solid;
+      position: absolute;
+      bottom: 14px;
+      left: 0;
+    }
+    &:first-child .wrap:before {
+      left: 50%;
+      margin-left: -15px;
+    }
+    &:last-child .wrap:before {
+      left: auto;
+      right: 50%;
+      margin-right: -15px;
+    }
+  }
+  p {
+    max-width: min-content;
+    margin: auto;
+    line-height: 120%;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+
+  .wrap {
+    position: relative;
+    padding: 0 0 1em;
+    @media screen and (min-width: 768px) {
+      padding: 0 0 2em;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 7px var(--gray-color) solid;
+      background: var(--primary-color);
+      @media screen and (min-width: 768px) {
+        background: linear-gradient(180deg, #68b26c 0%, #f5e14e 100%);
+      }
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -15px;
     }
   }
 }

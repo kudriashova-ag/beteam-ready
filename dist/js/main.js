@@ -129,18 +129,11 @@ $(document).ready(function () {
 
 
 
-const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarTogglerClose = document.querySelector('.navbar-toggler-close');
-navbarToggler.addEventListener('click', (e) => {
+$('.header__navbar-toggler').click((e) => {
   e.preventDefault();
-  navbarToggler.nextElementSibling.classList.add('open-menu');
-  document.body.classList.add('open-menu');
+  $('body').toggleClass('open-menu')
 });
-navbarTogglerClose.addEventListener('click', (e) => {
-  e.preventDefault();
-  navbarToggler.nextElementSibling.classList.remove('open-menu');
-  document.body.classList.remove('open-menu');
-});
+
 
 $('.more-link').click(function (e) {
   e.preventDefault();
