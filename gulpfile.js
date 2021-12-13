@@ -22,18 +22,18 @@ var cleanCss = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var gulpIf = require('gulp-if');
 var browserSync = require('browser-sync').create();
-// var gcmq = require('gulp-group-css-media-queries');
+var gcmq = require('gulp-group-css-media-queries');
 const webp = require('gulp-webp');
 
 function scss(cb) {
     return src(config.path.sass)
-        .pipe(gulpIf(config.isDevelopment, sourcemaps.init()))
+        //.pipe(gulpIf(config.isDevelopment, sourcemaps.init()))
         .pipe(sass())
         .pipe(concat(config.output.cssName))
         .pipe(autoprefixer())
-        .pipe(cleanCss())
-        // .pipe(gcmq())
-        .pipe(gulpIf(config.isDevelopment, sourcemaps.write()))
+        //.pipe(cleanCss())
+         .pipe(gcmq())
+        //.pipe(gulpIf(config.isDevelopment, sourcemaps.write()))
         .pipe(dest(config.output.path));
     cb();
 }
@@ -59,4 +59,4 @@ function img(cb) {
 }
 
 
-exports.default = series(scss, serve)
+exports.default = series(scss, img, serve)
