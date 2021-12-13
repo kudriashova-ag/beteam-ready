@@ -25,32 +25,37 @@
 <body class="contacts-page">
   <div id="page">
 
-    <header class="site-header">
+    <header class="header">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <button class="navbar-toggler"><span></span></button>
-          <nav class="col navbar">
-            <button class="navbar-toggler navbar-toggler-close"><span></span></button>
-            <a href="/" class="navbar-brand">
-              <img src="dist/images/logo-white.svg" alt="">
-            </a>
-            <ul class="navbar-menu">
-              <li class="menu-item"><a href="organisation-teambuilding.html">О компании</a></li>
-              <li class="menu-item active"><a href="#">Услуги</a></li>
-              <li class="menu-item"><a href="inner.html">Новости</a></li>
-              <li class="menu-item"><a href="blog.html">Блог</a></li>
-              <li class="menu-item"><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="col-auto header-left">
-            <ul class="language-toggler">
-              <li class="language-toggler-item active"><a href="#">UA</a></li>
-              <li class="language-toggler-item"><a href="#">RU</a></li>
-            </ul>
-            <ul class="contacts">
-              <li><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058) 557-78-88</a></li>
-            </ul>
-          </div>
+        <button class="header__navbar-toggler"><span></span></button>
+        <a href="/" class="header__logo">
+          <svg width="120" height="59" viewBox="0 0 120 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+            <path
+              d="M41.2469 48.4611C37.4201 48.4611 34.3233 47.3238 31.9565 45.0492C29.5897 42.7592 28.4063 39.7853 28.4063 36.1276V35.4821C28.4063 32.9308 28.875 30.6793 29.8125 28.7275C30.7654 26.7756 32.1486 25.2695 33.9621 24.209C35.7756 23.1332 37.9273 22.5953 40.417 22.5953C43.9211 22.5953 46.6875 23.6865 48.7162 25.8689C50.7449 28.0359 51.7592 31.0635 51.7592 34.9518V37.9718H36.3135C36.5902 39.3704 37.1972 40.4693 38.1347 41.2684C39.0722 42.0676 40.2864 42.4672 41.7772 42.4672C44.2362 42.4672 46.1573 41.6066 47.5405 39.8852L51.0907 44.0809C50.1224 45.418 48.7469 46.4862 46.9641 47.2853C45.1967 48.0692 43.291 48.4611 41.2469 48.4611ZM40.3709 28.5891C38.0963 28.5891 36.7439 30.0953 36.3135 33.1076H44.1516V32.5082C44.1824 31.2633 43.8673 30.3028 43.2065 29.6265C42.5456 28.9349 41.6004 28.5891 40.3709 28.5891ZM68.957 48C68.6803 47.4928 68.4344 46.7474 68.2193 45.7638C66.79 47.562 64.792 48.4611 62.2254 48.4611C59.874 48.4611 57.876 47.7541 56.2316 46.3402C54.5871 44.9109 53.7649 43.1204 53.7649 40.9687C53.7649 38.2638 54.7638 36.2198 56.7618 34.8366C58.7597 33.4534 61.6644 32.7618 65.4759 32.7618H67.8735V31.4477C67.8735 29.1578 66.8822 28.0128 64.8996 28.0128C63.0553 28.0128 62.1332 28.9196 62.1332 30.7331H54.3642C54.3642 28.3202 55.3863 26.3607 57.4303 24.8545C59.4898 23.3484 62.1101 22.5953 65.2915 22.5953C68.4728 22.5953 70.9857 23.3714 72.8299 24.9237C74.6742 26.4759 75.6194 28.6045 75.6655 31.3094V42.3519C75.6962 44.6419 76.0497 46.394 76.7259 47.6081V48H68.957ZM64.0927 42.9283C65.061 42.9283 65.8601 42.7208 66.4903 42.3058C67.1358 41.8909 67.5968 41.4221 67.8735 40.8996V36.9114H65.6142C62.9093 36.9114 61.5569 38.1255 61.5569 40.5538C61.5569 41.2608 61.7951 41.8371 62.2715 42.2828C62.748 42.7131 63.355 42.9283 64.0927 42.9283ZM90.9728 14.4344L98.4652 37.7874L105.934 14.4344H116.585V48H108.47V40.1619L109.254 24.1168L101.139 48H95.791L87.6532 24.0937L88.437 40.1619V48H80.3453V14.4344H90.9728Z"
+              fill="white" />
+            <path
+              d="M31.8898 15V3.22261H36.1203C37.6356 3.22261 38.7869 3.50032 39.5742 4.05576C40.3669 4.61119 40.7633 5.41739 40.7633 6.47433C40.7633 7.08369 40.6231 7.60408 40.3426 8.03548C40.0622 8.46689 39.6497 8.78505 39.105 8.98997C39.7198 9.15175 40.1917 9.45373 40.5206 9.89592C40.8495 10.3381 41.014 10.8774 41.014 11.5137C41.014 12.6677 40.6473 13.5359 39.9139 14.1183C39.1859 14.6953 38.1047 14.9892 36.6703 15H31.8898ZM34.729 9.99299V12.816H36.5894C37.1017 12.816 37.4954 12.7001 37.7704 12.4682C38.0454 12.2309 38.1829 11.8993 38.1829 11.4733C38.1829 10.4918 37.6949 9.99838 36.7188 9.99299H34.729ZM34.729 8.13255H36.2092C36.8294 8.12716 37.2716 8.01391 37.5358 7.79282C37.8 7.57172 37.9322 7.24547 37.9322 6.81406C37.9322 6.31795 37.7893 5.96204 37.5035 5.74633C37.2176 5.52524 36.7566 5.41469 36.1203 5.41469H34.729V8.13255ZM49.8875 10.0092H45.4225V12.816H50.6964V15H42.5833V3.22261H50.7126V5.41469H45.4225V7.89797H49.8875V10.0092Z"
+              fill="white" />
+            <rect y="22" width="26" height="6" fill="white" />
+            <rect x="10" y="48" width="26" height="6" transform="rotate(-90 10 48)" fill="white" />
+          </svg>
+        </a>
+        <nav class="header__navbar">
+          <button class="header__navbar-toggler"><span></span></button>
+          <ul class="navbar-menu">
+            <li class="menu-item"><a href="organisation-teambuilding.html">О компании</a></li>
+            <li class="menu-item active"><a href="#">Услуги</a></li>
+            <li class="menu-item"><a href="inner.html">Новости</a></li>
+            <li class="menu-item"><a href="blog.html">Блог</a></li>
+            <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="language-toggler">
+          <li class="language-toggler-item active"><a href="#">UA</a></li>
+          <li class="language-toggler-item"><a href="#">RU</a></li>
+        </ul>
+        <div class="header__contacts"><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058)
+            557-78-88</a>
         </div>
       </div>
     </header>
@@ -74,7 +79,7 @@
       <section class="container">
         <h2>Организовываем и проводим мероприятия по всей <span class="text-primary">Украине</span></h2>
         <div class="row">
-          <div class="col-lg-6 col-xxl-5">
+          <div class="contact-form">
             <div class="contact-item">
               <div class="contact-item-label">Адрес:</div>
               <div class="contact-item-value">ул. Елизаветы Чавдар 234 офис 45</div>
@@ -135,10 +140,10 @@
                 </svg>
               </a>
             </div>
-            <button class="btn btn-block mt-5">Оставить заявку</button>
+            <button class="btn btn-block">Оставить заявку</button>
 
           </div>
-          <div class="col-lg-6 col-xxl-7">
+          <div class="contact-map">
             <div class="wrap-iframe">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.2588730344096!2d30.47435935813155!3d50.450082794868784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce85d8300001%3A0x9587f3f5e6f6304a!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAyMNCyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1638646830351!5m2!1sru!2sua"
@@ -153,37 +158,28 @@
 
     </div>
 
-    <footer class="bg-white site-footer text-md-left">
+    <footer class="site-footer">
       <div class="container">
-        <div class="row align-items-center mb-4">
-          <div class="col-md-auto">
-            <a href="#" class="logo"><img src="dist/images/logo.svg" alt=""></a>
-          </div>
-          <div class="col-auto m-auto d-none d-md-block">
-            <nav class="navbar">
-              <ul class="navbar-menu">
-                <li class="menu-item"><a href="#">О компании</a></li>
-                <li class="menu-item active"><a href="#">Услуги</a></li>
-                <li class="menu-item"><a href="#">Новости</a></li>
-                <li class="menu-item"><a href="#">Блог</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-auto d-none d-md-block">
-            <ul class="contacts">
-              <li><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058) 557-78-88</a></li>
-            </ul>
-          </div>
+        <div class="footer__logo"><a href="#" class="logo"><img src="dist/images/logo.svg" alt=""></a></div>
+        <div class="footer__social-icons">
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-instagram"></a>
         </div>
-        <div class="row align-items-center">
-          <div class="col-lg-4 order-lg-2 social-icons">
-            <a href="#" class="icon icon-facebook"></a>
-            <a href="#" class="icon icon-instagram"></a>
-          </div>
-          <div class="col-lg-4 order-lg-1 copyright">&copy;2021. Все права защищены</div>
-          <div class="col-lg-4 order-lg-3 privacy-policy"><a href="#">Политика конфиденциальности</a></div>
-        </div>
+        <div class="footer__copyright">&copy;2021. Все права защищены</div>
+        <div class="footer__privacy-policy"><a href="#">Политика конфиденциальности</a></div>
+        <nav class="footer__navbar">
+          <ul class="navbar-menu">
+            <li class="menu-item"><a href="#">О компании</a></li>
+            <li class="menu-item active"><a href="#">Услуги</a></li>
+            <li class="menu-item"><a href="#">Новости</a></li>
+            <li class="menu-item"><a href="#">Блог</a></li>
+            <li class="menu-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts"><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058)
+            557-78-88</a></div>
+
       </div>
     </footer>
   </div>

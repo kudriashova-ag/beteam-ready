@@ -1,0 +1,120 @@
+.contacts-page .site-content {
+  position: relative;
+}
+
+.contacts-page .site-content:before {
+  content: url(../images/elements/cross-red.svg);
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-page .site-content:before {
+    content: url(../images/elements/circles.svg);
+    bottom: 50px;
+    top: auto;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-page .site-content:after {
+    content: url(../images/elements/green-circle-half-2.svg);
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.contacts-page .intro-section .container:before {
+  top: auto;
+  bottom: -50px;
+}
+
+.contacts-page .intro-section .container:after {
+  top: auto;
+  bottom: -50px;
+}
+
+.contacts-page h2 {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-page h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-page h2 {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+
+.contacts-page .social-links {
+  display: flex;
+}
+
+.contacts-page .social-links a + a {
+  margin-left: 1em;
+}
+
+.contacts-page iframe {
+  border: 0;
+  width: 100%;
+  height: inherit;
+  min-height: 400px;
+  box-shadow: 0 10px 20px #62b9d95e;
+  border-radius: 16px;
+}
+
+.contacts-page .contact-item {
+  margin-bottom: 2em;
+}
+
+.contacts-page .contact-item-label {
+  font-size: 2.4rem;
+}
+
+.contacts-page .contact-item-value {
+  padding: 1.5rem 0;
+  border-bottom: 1px rgba(0, 0, 0, 0.15) solid;
+}
+
+.contacts-page .wrap-iframe {
+  padding: 0.5em;
+  background: #fff;
+  border-radius: 30px;
+  margin-top: 3em;
+}
+
+@media screen and (min-width: 992px) {
+  .contacts-page .wrap-iframe {
+    height: 100%;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.contacts-page .contact-form,
+.contacts-page .contact-map {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .contacts-page .contact-form,
+.contacts-page .contact-map {
+    width: 50%;
+  }
+}
+
+.contacts-page .contact-form .btn {
+  margin-top: calc(var(--gutter) * 3);
+}

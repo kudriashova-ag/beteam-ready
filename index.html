@@ -224,52 +224,44 @@
       <section class="bg-gradient feedback-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-xl-7 fon feedback-form">
+            <div class="feedback__left-side">
               <h2>Форма обратной <div class="span d-inline d-md-block">связи</div>
               </h2>
-              <form action="" method="post">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <div class="form-floating">
-                      <input type="text" name="name" id="name-input" class="form-control" placeholder="Ваше имя:"
-                        aria-label="Ваше имя" autocomplete="off">
-                      <label for="name-input">Ваше имя:</label>
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="form-floating">
-                      <input type="text" name="phone" id="name-phone" class="form-control" placeholder="Ваш телефон:"
-                        aria-label="Ваш телефон" autocomplete="off">
-                      <label for="name-phone">Ваш телефон:</label>
-                    </div>
-                  </div>
+              <form action="" method="post" class="feedback__form">
+                <div class="form-floating">
+                  <input type="text" name="name" id="name-input" class="form-control" placeholder="Ваше имя:"
+                    aria-label="Ваше имя" autocomplete="off">
+                  <label for="name-input">Ваше имя:</label>
                 </div>
-                <div class="row mt-3 align-items-center">
-                  <div class="col-xl-5 order-xl-2">
-                    <button class="btn btn-block">Получить предложение</button>
-                  </div>
-                  <div class="col-xl-7 order-xl-1">
-                    <div class="form-check">
-                      <input type="checkbox" name="agree" id="policy" class="form-check-input">
-                      <label for="policy" class="policy-checkbox">Нажимая кнопку отправить, вы соглашаетесь с политикой
-                        конфедициальности, и обработки данных.</label>
-                    </div>
-                  </div>
+
+                <div class="form-floating">
+                  <input type="text" name="phone" id="name-phone" class="form-control" placeholder="Ваш телефон:"
+                    aria-label="Ваш телефон" autocomplete="off">
+                  <label for="name-phone">Ваш телефон:</label>
                 </div>
+
+                <button class="btn btn-block">Получить предложение</button>
+
+                <div class="form-check">
+                  <input type="checkbox" name="agree" id="policy" class="form-check-input">
+                  <label for="policy" class="policy-checkbox">Нажимая кнопку отправить, вы соглашаетесь с политикой
+                    конфедициальности, и обработки данных.</label>
+                </div>
+
+
               </form>
             </div>
-            <div class="col-md-6 col-xl-5 d-none d-xl-block feedback-image">
-              <div class="wrap"><img src="dist/images/boy.webp" alt=""></div>
+            <div class="feedback-image">
+              <div class="wrap"><img src="dist/images/boy-crross.png" alt=""></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-gray about-us">
+      <section class="about-us-section">
         <div class="container">
           <div class="row">
-
-            <div class="col-xl-6 offset-xl-6">
+            <div class="about-us-section__content">
               <h2 class="heading-leading effect-border-text effect-border-dark" data-text="О НАС">О нас</h2>
               <p class="leading">В то время некий безымянный печатник</p>
               <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
@@ -279,14 +271,14 @@
                 Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
                 годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых
                 используется Lorem Ipsum.</p>
-
               <a href="#" class="btn btn-large">Подробнее</a>
             </div>
+
           </div>
         </div>
       </section>
 
-      <section class="bg-white bg-pattern profiles">
+      <section class="bg-white bg-pattern profiles-section">
         <div class="container">
           <h2 class="text-center">Наша <span class="text-primary">команда</span></h2>
           <div class="slider-profiles">
@@ -346,36 +338,72 @@
         </div>
       </section>
 
-      <section class="bg-gradient blog">
+      <section class="bg-gradient blog-section">
         <div class="container">
-          <div class="header">
+          <div class="blog-section__header">
             <h2 class="heading-leading effect-border-text" data-text="БЛОГ">БЛОГ</h2>
-            <a href="#" class="btn btn-small d-none d-md-block">Весь блог</a>
+            <a href="#" class="btn btn-small">Весь блог</a>
           </div>
           <div data-simplebar data-simplebar-auto-hide="false" forceVisible="x">
             <div class="scrollable">
               <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="img">
-                      <img src="dist/images/blog-img1.webp">
-                    </div>
-                    <div class="caption">
-                      <h3>Идея командных методов работы была заимствована.</h3>
-                      <p>Идея командных методов работы была заимствована из мира спорта и стала активно внедряться в
-                        практику менеджмента в 60-70 годы XX века.</p>
-                    </div>
-                    <div class="info d-flex justify-content-between align-items-center">
-                      <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
-                      <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
-                      <div class="info-item"><i class="icon icon-tags"></i>seo</div>
-                      <div class="info-item"><i class="icon icon-comment"></i>Нет</div>
-                      <div class="info-item"><i class="icon icon-views"></i>11625</div>
-                      <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
-                    </div>
+
+                <article class="article-card">
+                  <div class="article-card__thumbnail">
+                    <img src="dist/images/blog-img1.webp">
                   </div>
-                </div>
-                <div class="col-md-4">
+                  <div class="article-card__caption">
+                    <h3>Идея командных методов работы была заимствована.</h3>
+                    <p>Идея командных методов работы была заимствована из мира спорта и стала активно внедряться в
+                      практику менеджмента в 60-70 годы XX века.</p>
+                  </div>
+                  <div class="article-card__info">
+                    <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
+                    <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
+                    <div class="info-item"><i class="icon icon-tags"></i>seo</div>
+                    <div class="info-item"><i class="icon icon-comments"></i>Нет</div>
+                    <div class="info-item"><i class="icon icon-views"></i>11625</div>
+                    <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
+                  </div>
+                </article>
+                <article class="article-card">
+                  <div class="article-card__thumbnail">
+                    <img src="dist/images/blog-img1.webp">
+                  </div>
+                  <div class="article-card__caption">
+                    <h3>Идея командных методов работы была заимствована.</h3>
+                    <p>Идея командных методов работы была заимствована из мира спорта и стала активно внедряться в
+                      практику менеджмента в 60-70 годы XX века.</p>
+                  </div>
+                  <div class="article-card__info">
+                    <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
+                    <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
+                    <div class="info-item"><i class="icon icon-tags"></i>seo</div>
+                    <div class="info-item"><i class="icon icon-comments"></i>Нет</div>
+                    <div class="info-item"><i class="icon icon-views"></i>11625</div>
+                    <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
+                  </div>
+                </article>
+                <article class="article-card">
+                  <div class="article-card__thumbnail">
+                    <img src="dist/images/blog-img1.webp">
+                  </div>
+                  <div class="article-card__caption">
+                    <h3>Идея командных методов работы была заимствована.</h3>
+                    <p>Идея командных методов работы была заимствована из мира спорта и стала активно внедряться в
+                      практику менеджмента в 60-70 годы XX века.</p>
+                  </div>
+                  <div class="article-card__info">
+                    <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
+                    <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
+                    <div class="info-item"><i class="icon icon-tags"></i>seo</div>
+                    <div class="info-item"><i class="icon icon-comments"></i>Нет</div>
+                    <div class="info-item"><i class="icon icon-views"></i>11625</div>
+                    <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
+                  </div>
+                </article>
+
+                <!-- <div class="col-md-4">
                   <div class="card">
                     <div class="img">
                       <img src="dist/images/blog-img1.webp">
@@ -389,7 +417,7 @@
                       <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
                       <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
                       <div class="info-item"><i class="icon icon-tags"></i>seo</div>
-                      <div class="info-item"><i class="icon icon-comment"></i>Нет</div>
+                      <div class="info-item"><i class="icon icon-comments"></i>Нет</div>
                       <div class="info-item"><i class="icon icon-views"></i>11625</div>
                       <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
                     </div>
@@ -409,19 +437,19 @@
                       <div class="info-item"><i class="icon icon-user"></i> Евгений</div>
                       <div class="info-item"><i class="icon icon-calendar"></i>07.15.2021</div>
                       <div class="info-item"><i class="icon icon-tags"></i>seo</div>
-                      <div class="info-item"><i class="icon icon-comment"></i>Нет</div>
+                      <div class="info-item"><i class="icon icon-comments"></i>Нет</div>
                       <div class="info-item"><i class="icon icon-views"></i>11625</div>
                       <div class="info-item"><i class="icon icon-time"></i>Читать 15 мин</div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-white bg-pattern partners">
+      <section class="partners-section">
         <div class="container">
           <h2 class="text-center">Наши <span class="text-primary">партнёры</span></h2>
           <div class="slider-partners">
@@ -457,35 +485,26 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div class="row align-items-center justify-content-between mb-4">
-          <div class="col-md-auto">
-            <a href="#" class="logo"><img src="dist/images/logo.svg" alt=""></a>
-          </div>
-          <div class="col-auto m-auto d-none d-md-block">
-            <nav class="navbar">
-              <ul class="navbar-menu">
-                <li class="menu-item"><a href="#">О компании</a></li>
-                <li class="menu-item active"><a href="#">Услуги</a></li>
-                <li class="menu-item"><a href="#">Новости</a></li>
-                <li class="menu-item"><a href="#">Блог</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-auto d-none d-md-block">
-            <ul class="contacts">
-              <li><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058) 557-78-88</a></li>
-            </ul>
-          </div>
+        <div class="footer__logo"><a href="#" class="logo"><img src="dist/images/logo.svg" alt=""></a></div>
+        <div class="footer__social-icons">
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-instagram"></a>
         </div>
-        <div class="row align-items-center copyright-block">
-          <div class="col-lg-4 order-lg-2 social-icons">
-            <a href="#" class="icon icon-facebook"></a>
-            <a href="#" class="icon icon-instagram"></a>
-          </div>
-          <div class="col-lg-4 order-lg-1 copyright">&copy;2021. Все права защищены</div>
-          <div class="col-lg-4 order-lg-3 privacy-policy"><a href="#">Политика конфиденциальности</a></div>
-        </div>
+        <div class="footer__copyright">&copy;2021. Все права защищены</div>
+        <div class="footer__privacy-policy"><a href="#">Политика конфиденциальности</a></div>
+        <nav class="footer__navbar">
+          <ul class="navbar-menu">
+            <li class="menu-item"><a href="#">О компании</a></li>
+            <li class="menu-item active"><a href="#">Услуги</a></li>
+            <li class="menu-item"><a href="#">Новости</a></li>
+            <li class="menu-item"><a href="#">Блог</a></li>
+            <li class="menu-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts"><a href="tel:+380585577888"><span class="icon icon-phone"></span>+38 (058)
+            557-78-88</a></div>
+
       </div>
     </footer>
   </div>

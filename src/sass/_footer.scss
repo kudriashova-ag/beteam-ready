@@ -2,57 +2,62 @@
   padding: 7rem 0 4rem 0;
   text-align: center;
   background: #fff;
-  .social-icons {
-    margin: 1em 0 2em 0;
-    @media screen and (min-width: 992px) {
-      margin: 2em 0 3em 0;
-    }
-  }
-  .copyright {
-    margin-bottom: 0.5em;
-  }
-  
-  .icon-phone:after {
-    filter: brightness(0);
+}
+
+.footer__navbar,
+.footer__contacts {
+  display: none;
+}
+
+.footer__social-icons {
+  margin: 30px 0;
+}
+.footer__privacy-policy {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .site-footer .container {
+    display: table;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: var(--gutter);
+    grid-row-gap: var(--gutter);
+    align-items: center;
   }
 
-  @media screen and (min-width: 992px) {
+  .footer__logo {
+    grid-area: 1 / 1 / 2 / 2;
     text-align: left;
-    .navbar .menu-item a {
-      padding: 4.5rem clamp(0.5rem, (0.5rem + 1.5vw), 6rem);
-    }
-    .social-icons {
-      margin: 0;
-      text-align: center;
-    }
-    .privacy-policy,
-    .contacts {
-      text-align: right;
-    }
-    .contacts {
-      font-weight: 700;
-    }
-    .copyright {
-      margin-bottom: 0;
-    }
-    .logo {
-      position: relative;
-      top: -5px;
-    }
   }
-
-  @media screen and (min-width: 1200px) {
-    .navbar .menu-item a {
-      &:hover {
-        color: var(--primary-color);
-      }
-    }
+  .footer__social-icons {
+    grid-area: 2 / 3 / 3 / 4;
+    margin: 0;
   }
-
-  .copyright-block {
-    margin-top: 0rem;
-    @media screen and (min-width: 1200px) {
-      margin-top: 7rem;
-    }
+  .footer__copyright {
+    grid-area: 2 / 4 / 3 / 6;
+    text-align: right;
+  }
+  .footer__privacy-policy {
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: left;
+    margin-top: 0;
+  }
+  .footer__navbar {
+    grid-area: 1 / 2 / 2 / 5;
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .footer__contacts {
+    grid-area: 1 / 5 / 2 / 6;
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .footer__navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
   }
 }

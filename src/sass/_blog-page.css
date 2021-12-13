@@ -1,0 +1,11 @@
+.blog-page .article-card {
+  margin-top: 2.5em;
+}
+
+.blog-page .article-card img {
+  border-radius: 13px;
+}
+
+.blog-page .article-card__info {
+  color: var(--primary-color);
+}

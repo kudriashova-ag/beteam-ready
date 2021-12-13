@@ -3,13 +3,13 @@
   margin-right: 3px;
 }
 
-@each $icon in (facebook, instagram, phone, user, calendar, tags, comment, views, time) {
+@each $icon in (facebook, instagram, phone, user, calendar, tags, comments, views, time) {
   .icon-#{$icon}:before {
     content: url(../images/icons/icon-#{$icon}.svg);
   }
 }
 
-@each $icon in (user, calendar, tags, comment, views, time) {
+@each $icon in (user, calendar, tags, comments, views, time) {
   .icon-#{$icon}-green:before {
     content: url(../images/icons/icon-#{$icon}-green.svg);
   }

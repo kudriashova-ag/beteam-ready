@@ -1,9 +1,19 @@
 .teambuilding-page {
+  .feedback-section {
+    padding-top: 10rem;
+  }
+
   @media screen and (min-width: 768px) {
     .intro-section .intro-section-title {
       width: 70%;
     }
   }
+  @media screen and (min-width: 1200px) {
+    .feedback-section {
+      background: url(../images/elements/circles.svg) no-repeat -60px 80%, linear-gradient(to right, #16a085, #63af6b);
+    }
+  }
+
   .intro-section .container:before,
   .intro-section .container:after {
     display: none;

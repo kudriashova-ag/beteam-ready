@@ -2,14 +2,14 @@
   .site-content {
     position: relative;
     &:before {
-      content: url(../images/element-red.svg);
+      content: url(../images/elements/cross-red.svg);
       position: absolute;
       top: 50%;
       right: -36px;
       z-index: -1;
 
       @media screen and (min-width: 768px) {
-        content: url(../images/circles.svg);
+        content: url(../images/elements/circles.svg);
         bottom: 50px;
         top: auto;
         right: 0;
@@ -18,7 +18,7 @@
 
     @media screen and (min-width: 1200px) {
       &:after {
-        content: url(../images/element-green-3.svg);
+        content: url(../images/elements/green-circle-half-2.svg);
         position: absolute;
         top: 40%;
         left: 0;
@@ -83,6 +83,18 @@
     @media screen and (min-width: 992px) {
       height: 100%;
       margin-top: 0;
+      margin-left: 30px;
     }
+  }
+
+  .contact-form,
+  .contact-map {
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      width: 50%;
+    }
+  }
+  .contact-form .btn {
+    margin-top: calc(var(--gutter) * 3);
   }
 }
